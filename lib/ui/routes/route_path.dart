@@ -1,3 +1,3 @@
 class RoutePath {
-  static const appRouteXXX = '/xxx';
+  static String root = "/";
 }

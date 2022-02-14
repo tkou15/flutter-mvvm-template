@@ -1,9 +1,12 @@
 {
-  "name": "flapp",
+  "name": "flutter-mvvm-template",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Alesion30/flapp.git",
-  "author": "Yuta Ohira <alesion90@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkou15/flutter-mvvm-template.git"
+  },
+  "author": "Koichi Takahashi",
   "license": "MIT",
   "devDependencies": {
     "husky": "7.0.4",

@@ -1,15 +1,15 @@
-import 'package:flapp/data/repository/xxx/xxx_repository.dart';
-import 'package:flapp/data/repository/xxx/xxx_repository_impl.dart';
+import 'package:flapp/repository/xxx/xxx_repository.dart';
+import 'package:flapp/repository/xxx/xxx_repository_impl.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import 'xxx_state.dart';
+import '../../model/counter/counter.dart';
 
 final xxxViewModelProvider =
-    StateNotifierProvider.autoDispose<XXXViewModel, AsyncValue<XXXState>>(
+    StateNotifierProvider.autoDispose<XXXViewModel, AsyncValue<Counter>>(
   (ref) => XXXViewModel(ref: ref),
 );
 
-class XXXViewModel extends StateNotifier<AsyncValue<XXXState>> {
+class XXXViewModel extends StateNotifier<AsyncValue<Counter>> {
   final AutoDisposeStateNotifierProviderRef _ref;
   XXXViewModel({required AutoDisposeStateNotifierProviderRef ref})
       : _ref = ref,
@@ -26,7 +26,7 @@ class XXXViewModel extends StateNotifier<AsyncValue<XXXState>> {
     result.when(
       success: (data) {
         state = AsyncValue.data(
-          XXXState(count: data),
+          Counter(count: data),
         );
       },
       failure: (error) {
@@ -39,7 +39,7 @@ class XXXViewModel extends StateNotifier<AsyncValue<XXXState>> {
   void increment() {
     final count = state.value!.count;
     state = AsyncValue.data(
-      XXXState(count: count + 1),
+      Counter(count: count + 1),
     );
   }
 }

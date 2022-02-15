@@ -1,6 +1,6 @@
 import 'package:device_preview/device_preview.dart';
-import 'package:flapp/ui/routes/routes.dart';
-import 'package:flapp/ui/theme/app_theme.dart';
+import 'package:flapp/routes/routes.dart';
+import 'package:flapp/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/l10n.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';

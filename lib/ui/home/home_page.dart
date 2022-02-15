@@ -3,7 +3,7 @@ import 'package:flapp/gen/assets.gen.dart';
 import 'package:flapp/hooks/use_l10n.dart';
 import 'package:flapp/theme/app_text_theme.dart';
 import 'package:flapp/theme/app_theme.dart';
-import 'package:flapp/ui/home/provider/home_page_provider.dart';
+import 'package:flapp/ui/home/home_page_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

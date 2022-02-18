@@ -7,7 +7,10 @@
 
 ## Setup
 
-- `$ fvm install`
-- `$ fvm flutter pub get`
-- `$ fvm flutter pub run build_runner build`
+- `$ make setup`
+- `$ make dependencies`
+- `$ make build-runner`
 
+## Run
+- `$ make run-dev`
+- `$ make run-dev-preview`
